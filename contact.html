@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/form.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj"
+      crossorigin="anonymous"
+    ></script>
+    <script src="js/script.js"></script>
+    <title>FEWD Final Project: Fly Angel's Photography</title>
+  </head>
+  <body>
+    <main class="contact-pg-container">
+      <!--Header-->
+      <header class="header-container">
+        <h2 class="header-title">Fly Angel's Photography</h2>
+        <div class="topnav">
+          <a class="nav-link" href="./index.html">Home</a>
+          <a class="nav-link" href="./about_me.html">About Me</a>
+          <a class="nav-link" href="./gallery.html">Gallery</a>
+          <a class="nav-link active" href="./contact.html">Contact Info</a>
+          <!--   /*    <a class="hamburger">
+            <img src="img/hamburger.svg" alt="hamburger-icon"
+          /></a>-->
+        </div>
+      </header>
+      <h3>Contact</h3>
+      <section class="form">
+        <form id="contact-form">
+          <fieldset>
+            <legend>Your Contact Info</legend>
+
+            <div class="form-row">
+              <label for="name">Your Name</label>
+              <div class="name-fields">
+                <input
+                  type="text"
+                  name="name[first]"
+                  placeholder="First"
+                  id="first-name"
+                  autofocus
+                />
+                <input
+                  type="text"
+                  name="name[last]"
+                  placeholder="Last"
+                  id="last-name"
+                />
+              </div>
+            </div>
+
+            <div class="form-row">
+              <label for="phone">Phone Number</label>
+              <div class="phone-number-fields">
+                <input
+                  type="text"
+                  name="phone[area_code]"
+                  class="phone"
+                  maxlength="3"
+                  id="phone-area-code"
+                />
+                &mdash;
+                <input
+                  type="text"
+                  name="phone[prefix]"
+                  class="phone"
+                  maxlength="3"
+                  id="phone-prefix"
+                />
+                &mdash;
+                <input
+                  type="text"
+                  name="phone[line_number]"
+                  class="phone"
+                  maxlength="4"
+                  id="phone-line-number"
+                />
+              </div>
+            </div>
+          </fieldset>
+
+          <fieldset>
+            <legend>Additional Info</legend>
+
+            <div class="form-row">
+              <label>Area of Interest</label>
+              <select id="area-interest">
+                <option>Select One</option>
+                <option>Event</option>
+                <option>Portrait</option>
+                <option>Landscape</option>
+                <option>Other</option>
+              </select>
+            </div>
+
+            <div class="form-row">
+              <label for="additional-info">Details of Inquiry</label>
+              <textarea name="additional-info" id="additional-info"> </textarea>
+            </div>
+          </fieldset>
+
+          <ul id="errors"></ul>
+
+          <fieldset>
+            <input type="submit" value="Submit" />
+          </fieldset>
+        </form>
+      </section>
+    </main>
+  </body>
+</html>
