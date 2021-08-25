@@ -1,13 +1,12 @@
-form {
+.form {
   width: 700px;
-  height: 450px;
-  /*margin: 10px auto;*/
+  /*height: 520px;*/
+  margin: 25px auto;
   background-image: url("../img/mid-bg.png");
-  background-repeat: no-repeat;
-  background-position: center;
+  background-size: auto 710px;
   border-radius: 8px 8px 8px 8px;
   border: 3px solid blue;
-  padding: 25px 25px;
+  padding: 15px 15px;
 }
 fieldset {
   margin: 0;
@@ -68,6 +67,8 @@ textarea {
 }
 @media (max-width: 800px) {
   .form {
-    width: 400px;
+    postion: fixed;
+    border-radius: 1px 1px 1px 1px;
+    /*padding: 7px 7px;*/
   }
 }
