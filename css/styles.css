@@ -1,5 +1,6 @@
 body {
   font-family: Georgia;
+  font-family: "Rampart One", cursive;
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -95,7 +96,6 @@ margin: 10 auto;*/
 }
 
 .main-btn {
-  color: black;
   cursor: pointer;
   font-size: 16px;
   margin: 5px auto;
@@ -103,12 +103,17 @@ margin: 10 auto;*/
   padding: 15px 0px;
   text-transform: uppercase;
   text-align: center;
-  width: 100px;
+  text-decoration: none;
+  width: 120px;
   background-color: lightskyblue;
   border: 1px solid black;
   transition: 0.2s ease-in-out;
 }
 
+.main-btn a {
+  text-decoration: none;
+  color: black;
+}
 .main-btn:hover {
   background-color: lightgreen;
 }
@@ -120,9 +125,11 @@ margin: 10 auto;*/
     float: none;
     width: 100%;
     flex-direction: column;
+    display: none;
   }
   .mid-img {
     display: none;
+    height: 65%;
   }
   .mid-article {
     width: 75%;
@@ -138,11 +145,13 @@ margin: 10 auto;*/
     max-width: 65%;
   }
 }
+
 /*--------About Me Page--------*/
 .content-container {
   box-sizing: border-box;
   margin: 25px 300px;
   display: grid;
+  width: 75%;
 }
 
 .floated-image {
@@ -158,6 +167,3 @@ margin: 10 auto;*/
   .floated-image {
     height: auto;
     margin: 15px 0;
-    max-width: 100%;
-  }
-}
