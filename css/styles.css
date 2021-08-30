@@ -151,7 +151,6 @@ margin: 10 auto;*/
   box-sizing: border-box;
   margin: 25px 300px;
   display: grid;
-  width: 75%;
 }
 
 .floated-image {
@@ -167,3 +166,6 @@ margin: 10 auto;*/
   .floated-image {
     height: auto;
     margin: 15px 0;
+    max-width: 100%;
+  }
+}
